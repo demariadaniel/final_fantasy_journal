@@ -1,0 +1,126 @@
+body {
+	margin:0;
+	background:#FFB03B;
+	font-family: Arial;
+}
+
+.side-menu {
+	float: left;
+	height: 100vh;
+	width: 240px;
+	padding: 0px;
+	margin: 0;
+	background: #468966;
+	box-sizing: border-box;
+	position: absolute;
+	left: -240px;
+	transition: all 0.3s ease;
+}
+
+.side-menu h1 {
+	text-align:center;
+}
+
+.side-menu li a:hover {
+	display: block;
+	background: #CAFCD8;
+}
+
+.side-menu ul {
+	line-height: 36px;
+	display: block;
+}
+
+.holder {
+	width:100%;
+	height: 100vh;
+	position: relative;
+	left: 0;
+	top: 0;
+	/*overflow-y: scroll;*/
+	overflow-x: hidden;
+	transition: all 0.3s ease;
+}
+
+.holder.open, .endview.open {
+	left: 240px;
+}
+.side-menu.open, .endside.open {
+	left: 0px;
+}
+
+.formdiv, .entryview, .searchview, .endview {
+	text-align: center;
+	padding: 15px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.formdiv input {
+	background: transparent;
+	border: none;
+	border-bottom: 1px dotted black;
+	border-left: 1px dotted black;
+	width: 600px;
+	font-size: 24px;
+}
+
+.formdiv input:focus, textarea:focus {
+	background: #FFFFD7;
+}
+
+textarea {
+	display: block;
+	margin: 0 auto 15px auto;
+	width: 400px;
+	height: 145px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px dotted black;
+	border-left: 1px dotted black;
+	width: 600px;
+	font-size: 24px;
+}
+
+.formdiv {
+		background: #FFF0A5;
+}
+.entryview {
+		background: #FFB03B;
+		/*height: 60px;*/
+}
+#menu-button, .delete-button {
+	color: #8E31FF;
+}
+
+.endview{
+	background: #8E2800;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 30px;
+	width: 100%;
+	padding: 5px;
+	transition: all 0.3s ease;
+}
+.endside{
+	background: #234533;
+	position: fixed;
+	bottom: 0;
+	left: -240px;
+	height: 30px;
+	width: 240px;
+	transition: all 0.3s ease;
+}
+.searchview {
+	background: #B64926;
+	margin-bottom: 30px;
+}
+
+.evenEntry{
+	background: #A8D1B3;
+}
+
+.oddEntry{
+	background: #CAFCD8;
+}
